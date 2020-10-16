@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Ομάδα Παραγωγών Φασόλια Σισανίου - Αρχική</title>
+<link rel="shortcut icon" type="image/x-icon" href="Untitled.png">
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+<script
+  src="https://code.jquery.com/jquery-3.5.1.js"
+  integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc="
+  crossorigin="anonymous"></script>
+<link rel ="stylesheet" href ="style.css">
+
+	<script>
+		$(document).ready(function(){
+			$(".toggle-nav").click(function(){
+				$(".menu ul li").slideToggle("slow");
+			});
+		});
+	
+	</script>
+	
+	<script type="text/javascript">
+            var picPaths = ['σισ4.png','σισ3.png','σισ2.png','σισ5.png','σισ6.png','σισ1.png','collage1.jpg'];
+            var curPic = -1;
+            //preload the images for smooth animation
+            var imgO = new Array();
+            for(i=0; i < picPaths.length; i++) {
+                imgO[i] = new Image();
+                imgO[i].src = picPaths[i];
+            }
+
+            function swapImage() {
+                curPic = (++curPic > picPaths.length-1)? 0 : curPic;
+                imgCont.src = imgO[curPic].src;
+                setTimeout(swapImage,3000);
+            }
+
+            window.onload=function() {
+                imgCont = document.getElementById('imgBanner');
+                swapImage();
+            }
+    </script>
+		
+	<script>
+	$(document).ready(function(){
+	  $('[data-toggle="tooltip"]').tooltip();   
+	});
+	</script>
+
+</head>
+<body>
+
+		<div class="header-middle"><!--header-middle-->
+			<div class="container">
+				<div class="row">
+					<div class="col-sm-4">
+							<a href="index.html"><img src="logo_new.png" alt="logo" ></a>
+					</div>
+					<div class="col-sm-4">
+							<a href="index.html"><img src="as.png" alt="as" /></a>
+					</div>
+					
+				</div>
+			</div>
+		</div><!--/header-middle-->
+
+	<nav class ="menu">
+		<a class ="toggle-nav" href ="#">&#9776;</a>
+		<ul>
+			<li><a href ="index.html">Αρχικη</a></li>
+			<li><a href ="sisani1.html">Το Σισανι</a></li>
+			<li><a href ="sunetairismos.html">Ο Συνεταιρισμος</a></li>
+			<li><a href ="products.html">Προϊοντα</a></li>
+			<li><a href ="contact1.html">Επικοινωνια</a></li>	
+		</ul>
+		
+		<div class ="social">
+			<ul>
+				<li><a href ="https://www.facebook.com/sisani.beans.9"><i class ="fa fa-facebook"></i></a></li>
+				<li><a href ="#" data-toggle="tooltip" title="agrosunsisaniou2015@hotmail.com"><i class ="fa fa-envelope"></i></a></li>
+			</ul>	
+		</div>
+	</nav>
+	
+	<div class="container">
+		<div class="leftpane"></div>
+		<div class="middlepane">
+			<div class="middle-top">
+				<img id="imgBanner" src="" alt="" />
+			</div>
+			<div class="middle-bot2">
+			<article>
+			<h2>Ομάδα Παραγωγών "Φασόλια Σισανίου"</h2>
+			<p>Τα φασόλια Σισανίου αποτελούν παραδοσιακό προϊόν της περιοχής και ξεχωρίζουν για την ποιότητά τους που οφείλεται στον τόπο και στο μικροκλίμα που επικρατεί στην κοιλάδα του ποταμού Μύριχου. Οι παραγωγοί φασολιών, αξιοποιώντας τα πλεονεκτήματα του τόπου, επέκτειναν την παραδοσιακή καλλιέργεια και σε βιολογική.</p>
+			</article>
+			</div>
+			<!--<div class="middle-for">
+				<img src="foreis.png" alt="" />
+			</div>-->
+		</div>
+	</div>
+	
+	<div class="footer1">
+		<div class="footer1-top">
+			<p>Σισάνι Βοΐου Κοζάνης, 50003
+			<br>Κινητό: +30 697 920 3216
+			<br>Email: agrosunsisaniou2015@hotmail.com
+			<br>Ισολογισμός 2020 &nbsp;   <a href="./Tsiogkas_Markos_CV.pdf" download>
+			<img src="./asd.png" alt="Ισολογισμός" width="19" height="13"></a>
+			</p>
+		</div>	
+	</div>
+	
+	<div class="footer">
+		<div class="footer-bottom">
+			<p>Copyright © 2020 ΟΠΦΣ | Designed by Markos Tsiogkas</p> 
+		</div>	
+	</div>
+	
+	
+	
+
+
+
+</body>
+</html>
